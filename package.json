@@ -16,7 +16,8 @@
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "15.2.1",
     "nx": "14.7.5",
-    "prettier": "latest"
+    "prettier": "latest",
+    "sst": "^2.5.1"
   },
   "dependencies": {}
 }
