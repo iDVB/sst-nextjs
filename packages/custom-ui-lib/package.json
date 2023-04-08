@@ -1,0 +1,12 @@
+{
+  "name": "custom-ui-lib",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": [
+    "./index.js"
+  ],
+  "peerDependencies": {
+    "debug": "^4.3.4"
+  }
+}

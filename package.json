@@ -4,11 +4,19 @@
   "private": true,
   "type": "module",
   "workspaces": [
+    "packages/*",
     "sites/*",
     "sites/*/packages/*"
   ],
   "scripts": {},
-  "devDependencies": {},
-
+  "devDependencies": {
+    "@nrwl/cli": "15.2.1",
+    "@nrwl/jest": "15.2.1",
+    "@nrwl/linter": "15.2.1",
+    "@nrwl/nx-cloud": "latest",
+    "@nrwl/workspace": "15.2.1",
+    "nx": "14.7.5",
+    "prettier": "latest"
+  },
   "dependencies": {}
 }

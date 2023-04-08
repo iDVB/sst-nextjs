@@ -2,10 +2,24 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import customUiLib from 'custom-ui-lib';
+import {find} from 'lodash'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+const testThings = [{
+  name: 'test',
+  value: 'test'
+}, {
+  name: 'test2',
+  value: 'test2'
+}, {
+  name: 'test3',
+  value: 'test3'
+}]
+
+export default function Home({thing}) {
+  console.log(thing)
   return (
     <>
       <Head>
@@ -111,4 +125,12 @@ export default function Home() {
       </main>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  customUiLib();
+  const thing = find(testThings, {name: 'test2'})
+  return {
+    props: {thing},
+  }
 }

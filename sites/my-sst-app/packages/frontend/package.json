@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,14 @@
   "dependencies": {
     "next": "13.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "custom-ui-lib": "workspace:*",
+    "debug": "^4.3.4",
+    "lodash": "^4.17.21"
+  },
+  "dependenciesMeta": {
+    "custom-ui-lib": {
+      "injected": true
+    }
   }
 }
